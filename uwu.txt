@@ -1,0 +1,34 @@
+Un chat en html-js
+En el que puedes elegir Tu normbre de usuario y el destinatario
+Entre dos paginas deben estar conectadas
+Acto seguido se abre un input para poner los mensajes
+Y abajo se pondria el chat
+
+buffer de lectura para imagenes fotos de perfil
+
+Pagina para crear usuario
+Pagina para iniciar sesion (sesion storage) {
+    Crear una variable en el sesion storage y un dato en la base de datos que sea la misma clave
+    esta se actualizara cada vez que se inicie sesion, si no hay sesion storage se pedira iniciar sesion otra vez. 
+
+    Opcion para salir de la sesion
+}
+Pagina incial{
+    mostrando spiderChat
+    Mostrando amigos para elegir los chats 
+    Cuando se haga click en un chat se pedira a la base de datos el chat de un usuario
+    Y cargara la pagina de chat
+}
+
+Pagina de chat{
+    Tendra los dos usuarios, y en el centro el chat pedido por la base de datos, se ira pidiendo a la base de datos cada 2 segundos el nuevo chat y se actualizara
+}
+
+
+
+Sistema para chat{
+    Almacenar las lineas como una tabla la cual tendra relacion a un chat que sera la relacion entre dos usarios 
+    Esta linea almacenara el id del emisor, el mensaje en si, la hora, y el numero de linea
+    Cuando se carge el chat se cargaran los 20 primeros mensajes
+    Y si siguen bajando ira cargando de 20 en 20
+}
