@@ -3,10 +3,72 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href=""> <!--El icono de la pagina web-->
-        <!--<link rel="stylesheet" type="text/css" href="css/create_user.css">-->
-        <title></title> <!--Titulo superior de la pagina-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>SpiderLink</title> <!--Titulo superior de la pagina-->
     </head>
-    <body>
-        SpiderLink
+    <body onload="repfriendlist(),titulo_load()">
+        <script src="js/addfriend.js"></script>
+        <script src="js/repfriendlist.js"></script>
+        <script src="js/displayxat.js"></script>
+        <script src="js/sendsms.js"></script>
+        <script src="js/repsms.js"></script>
+        <script src="js/logout.js"></script>
+        <script>
+            function titulo_load() {
+                var link = document.querySelector('#titulo a');
+                let mail =sessionStorage.getItem("ClauMail");
+                link.textContent = mail;
+            }
+        </script>
+
+        <div id="titulo">
+            <div id="fondo">a</div>
+            <a></a> 
+        </div>   
+
+        <div id="div_derecha">
+            <div id="addfriend_div">
+                <label for="addfriend">Añadir Amigo</label> <br>
+                <input type="email" id="addfriend" placeholder="sucorreo@gmail.com" required>
+                <button type="button" onclick="addfriend()">Añadir</button>
+            </div>
+    
+            <div id="div_friend">
+                <ul id="friendlist">
+                </ul>
+            </div>
+        </div>
+
+        <div id="chat_selector">
+            <input type="radio" checked name="opcion" id="1" value="xat1" onchange="displayXat('xat1')">
+            <input type="radio" name="opcion" id="2" value="xat2" onchange="displayXat('xat2')">
+            <input type="radio" name="opcion" id="3" value="xat3" onchange="displayXat('xat3')">
+            <input type="radio" name="opcion" id="4" value="xat4" onchange="displayXat('xat4')">
+            <input type="radio" name="opcion" id="5" value="xat5" onchange="displayXat('xat5')">
+        </div>
+
+
+        <div id="xat1">
+        </div>
+
+        <div id="xat2">
+        </div>
+
+        <div id="xat3">
+        </div>
+
+        <div id="xat4">
+        </div>
+
+        <div id="xat5">
+        </div>
+
+        <div id="sendmessage_button">
+            <input type="text" id="sendmessage" placeholder="Mensaje">
+            <button type="button" onclick="sendsms()">Enviar</button>
+        </div>
+
+        <button type="button" onclick="logout()">Logout</button>
+
     </body>
 </html>

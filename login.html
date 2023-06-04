@@ -3,24 +3,37 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href=""> <!--El icono de la pagina web-->
-        <!--<link rel="stylesheet" type="text/css" href="css/create_user.css">-->
-        <title></title> <!--Titulo superior de la pagina-->
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <title>SpiderLink</title>
     </head>
-    <body onload="revisar_clave_sesion()">
+    <body>
         <script src="js/login.js"></script>
-        <H1>Iniciar Sesion</H1>
-        <form method="post" action="" onsubmit="iniciar_sesion(event)">
+        
+        <div id="titulo">
+            <div id="fondo">a</div>
+            <a>SpiderLink</a> 
+        </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="tucorreo@gmail.com" required>
-            <br>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" placeholder="Tu contraseña" required><br>
+        <div id="login">
+            <div id="fondo"> a  </div>
+            <h1>Iniciar Sesion</h1>
 
-            <button type="submit">Iniciar Sesion</button>
-            <br>
-            <button type="reset">Registrarse</button>
-        </form>
+            <form onsubmit="login(event)">
+
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" placeholder="tucorreo@gmail.com" required>
+                <br>
+
+                <label for="password">Contraseña</label> <br>
+                <input type="password" id="password" placeholder="Tu contraseña" required><br>
+
+                <button type="submit">Iniciar Sesion</button>
+                <br>
+                <div id="register_button">
+                    <button type="button" onclick="register()">Registrarse</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

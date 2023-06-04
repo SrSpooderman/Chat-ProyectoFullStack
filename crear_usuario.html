@@ -2,31 +2,43 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <link rel="icon" href=""> <!--El icono de la pagina web-->
-        <!--<link rel="stylesheet" type="text/css" href="css/create_user.css">-->
-        <title></title> <!--Titulo superior de la pagina-->
+        <link rel="icon" href="">
+        <link rel="stylesheet" type="text/css" href="css/create_user.css">
+        <title>SpiderLink</title>
     </head>
-    <body>
-        <script src="js/create_user.js"></script>
-        <H1>Crear usuario</H1>
-        <form method="post" action="" onsubmit="contraseñas_iguales(event)">
+    <body onload="lista_paises()">
+        <script src="js/listas_paises.js"></script>
+        <script src="js/registre.js"></script>
+        
+        <div id="titulo">
+            <div id="fondo">a</div>
+            <a>SpiderLink</a> 
+        </div>
 
-            <label for="username">Usuario</label>
-            <input type="text" id="username" placeholder="Usuario" required>
-            <br>
+        <div id="register">
+            <div id="fondo"> a  </div>
+            <H1>Crear usuario</H1>
+            <form method="post" action="" onsubmit="contraseñas_iguales(event)">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="tucorreo@gmail.com" required>
-            <br>
+                <label for="username">Usuario</label> <br>
+                <input type="text" id="username" placeholder="Usuario" required>
+                <br>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" placeholder="A-Z 0-9" required><br>
-            <label for="password2">Repetir contraseña</label>
-            <input type="password" id="password2" placeholder="A-Z 0-9" required><br>
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" placeholder="tucorreo@gmail.com" required>
 
-            <button type="submit">Registrarse</button>
-            <br>
-            <button type="reset">Resetear</button>
-        </form>
+                <br><label for="password">Contraseña</label> <br>
+                <input type="password" id="password" placeholder="A-Z 0-9" required><br>
+                <label for="password2">Repetir contraseña</label> <br>
+                <input type="password" id="password2" placeholder="A-Z 0-9" required><br>
+
+                <label for="codeCountry">Pais</label>
+                <select id="codeCountry"></select>
+
+                <div id="register_button">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

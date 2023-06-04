@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+body {
+    display: block;
+    background-color: #1c313c;
+    color: white;
+}
+
+/*Titulo de la pagina*/
+#titulo {
+    margin-top: 3%;
+    text-align: center;
+    width: 70%;
+    font-size: 24px;
+    color: white;
+    margin-right: 15%;
+    margin-left: 15%;
+    position: relative;
+    margin-bottom: 4%;
+}
+#titulo a {
+    font-size: 10vh;
+    opacity: 100%;
+    position: relative;
+    z-index: 1;
+}
+#titulo #fondo {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    border-radius: 20px;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#div_derecha {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 20%;
+}
+/*Lista de amigos*/
+#div_friend {
+    float: right;
+    width: 100%;
+    background-color: red;
+}
+
+/*Boton de añadir amigos*/
+#addfriend_div{
+    float: right;
+    width: 100%;
+    background-color: violet;
+}
+#addfriend_div label {
+    text-align: center;
+}
+
+/*Sleectro de chart*/
+#chat_selector{
+    background-color: #284655;
+    width: 6%;
+}
+
+/*Boton de enviar mensaje*/
+#sendmessage_button {
+    background-color: green;
+}
+
+#xat1 {
+    width: 80%;
+    height: 60vh;
+    overflow: auto;
+    background-color: #284655;
+}
+#xat2 {
+    width: 80%;
+    height: 60vh;
+    overflow: auto;
+    background-color: rgb(145, 145, 56);
+    display: none;
+}
+#xat3 {
+    width: 80%;
+    height: 60vh;
+    overflow: auto;
+    background-color: rgb(10, 183, 246);
+    display: none;
+}
+#xat4 {
+    width: 80%;
+    height: 60vh;
+    overflow: auto;
+    background-color: rgba(196, 13, 6, 0.768);
+    display: none;
+}
+#xat5 {
+    width: 80%;
+    height: 60vh;
+    overflow: auto;
+    background-color: rgb(6, 232, 122);
+    display: none;
+}
+
+ul li:hover {
+    background-color: red;
+}

@@ -31,7 +31,8 @@ body {
     left: 0;
 }
 
-#register {
+
+#login {
     width: 20%;
     height: auto;
     margin-right: 35%;
@@ -42,10 +43,16 @@ body {
     position: relative;
     color: white;
 }
-#register *{
+
+#login .error_pass {
+    margin: 0;
+    color: red;
+}
+
+#login *{
     position: relative;
 }
-#register #fondo {
+#login #fondo {
     height: 100%;
     width: 100%;
     background-color: black;
@@ -56,36 +63,26 @@ body {
     top: 0;
     left: 0;
 }
-#register input,select {
+#login input {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-#register select{
-    border-radius: 4px;
-}
-#register h1 {
+#login h1 {
     padding-top: 5%;
     text-align: center;
 }
-#register #password {
+#login #password {
     margin-bottom: 5%;
 }
-#register button {
+#login button {
     margin-bottom: 3%;
 }
-#register #register_button {
+#login #register_button {
     padding-bottom: 5%;
 }
-#register button:hover,input:hover,select:hover{
+#login button:hover,input:hover{
     background-color: rgba(49, 47, 48, 0.104);
 }
-#register select:focus{
-    background-color: rgba(49, 47, 48, 0.104);
-}
-#register select option{
-    background-color: rgba(49, 47, 48, 0.104);
-}
-
-#register #register_button:hover button {
-    background-color: rgb(243, 176, 176);
+#login #register_button:hover button {
+    background-color: rgba(33, 29, 31, 0.104);
 }
