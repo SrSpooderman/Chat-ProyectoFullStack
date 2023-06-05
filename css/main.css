@@ -47,14 +47,14 @@ body {
 #div_friend {
     float: right;
     width: 100%;
-    background-color: red;
+    background-color: #284655;
 }
 
 /*Boton de añadir amigos*/
 #addfriend_div{
     float: right;
     width: 100%;
-    background-color: violet;
+    background-color: #284655;
 }
 #addfriend_div label {
     text-align: center;
@@ -81,31 +81,31 @@ body {
     width: 80%;
     height: 60vh;
     overflow: auto;
-    background-color: rgb(145, 145, 56);
+    background-color: #284655;
     display: none;
 }
 #xat3 {
     width: 80%;
     height: 60vh;
     overflow: auto;
-    background-color: rgb(10, 183, 246);
+    background-color: #284655;
     display: none;
 }
 #xat4 {
     width: 80%;
     height: 60vh;
     overflow: auto;
-    background-color: rgba(196, 13, 6, 0.768);
+    background-color: #284655;
     display: none;
 }
 #xat5 {
     width: 80%;
     height: 60vh;
     overflow: auto;
-    background-color: rgb(6, 232, 122);
+    background-color: #284655;
     display: none;
 }
 
 ul li:hover {
-    background-color: red;
+    background-color: black;
 }
